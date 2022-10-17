@@ -896,32 +896,24 @@ video {
     display: none;
   }
 
-  .sm\:h-7 {
-    height: 1.75rem;
+  .sm\:h-8 {
+    height: 2rem;
   }
 
   .sm\:h-14 {
     height: 3.5rem;
   }
 
-  .sm\:h-8 {
-    height: 2rem;
-  }
-
   .sm\:w-full {
     width: 100%;
   }
 
-  .sm\:w-7 {
-    width: 1.75rem;
+  .sm\:w-8 {
+    width: 2rem;
   }
 
   .sm\:w-40 {
     width: 10rem;
-  }
-
-  .sm\:w-8 {
-    width: 2rem;
   }
 
   .sm\:flex-col {
@@ -948,9 +940,19 @@ video {
     gap: 1.25rem;
   }
 
+  .sm\:space-x-3 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   .sm\:space-y-5 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+  }
+
+  .sm\:hover\:bg-transparent:hover {
+    background-color: transparent;
   }
 }
