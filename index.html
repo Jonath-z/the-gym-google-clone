@@ -9,7 +9,7 @@
     <title>Google | clone</title>
   </head>
   <body class="flex flex-col justify-between h-screen">
-    <header class="w-fit flex gap-5 ml-auto p-4 items-center">
+    <header class="w-fit flex gap-2 ml-auto p-4 items-center">
       <div class="flex gap-[0.938rem] text-sm font-arial text-black/70 mr-3">
         <p class="hover:underline hover:decoration-black/70 cursor-pointer">
           image
@@ -39,7 +39,7 @@
       </div>
     </header>
     <div
-      class="flex flex-col justify-center items-center font-arial gap-5 -mt-56"
+      class="flex flex-col justify-center items-center font-arial gap-5 -mt-56 px-5"
     >
       <img
         alt="Google"
@@ -48,9 +48,9 @@
         width="272"
       />
 
-      <div class="flex flex-col justify-center items-center gap-5">
+      <div class="flex flex-col justify-center items-center gap-5 sm:w-full">
         <div
-          class="flex border w-[36rem] py-[0.6rem] border-gray-200 rounded-full px-4 justify-center items-center gap-3 hover:bg-white hover:shadow-md"
+          class="flex border w-[36rem] sm:w-full py-[0.6rem] border-gray-200 rounded-full px-4 justify-center items-center gap-3 hover:bg-white hover:shadow-md"
         >
           <svg
             focusable="false"
@@ -88,44 +88,46 @@
         </div>
         <div class="space-x-2">
           <button
-            class="bg-[#f8f9fa] px-4 text-[#3c4043] py-1 hover:border hover:shadow-sm"
+            class="bg-button-gray px-4 text-primary-gray py-1 hover:border hover:shadow-sm"
           >
             Google Search
           </button>
           <button
-            class="bg-[#f8f9fa] px-4 text-[#3c4043] py-1 hover:border hover:shadow-sm"
+            class="bg-button-gray px-4 text-primary-gray py-1 hover:border hover:shadow-sm"
           >
             I'm feeling lucky
           </button>
         </div>
-        <p class="text-sm space-x-2 text-[#3c4043]">
+        <p class="text-sm space-x-2 text-primary-gray">
           Google offered in :
           <span
-            class="text-[#1a0dab] tracking-wider cursor-pointer hover:underline hover:decoration-[#1a0dab]"
+            class="text-primary-blue tracking-wider cursor-pointer hover:underline hover:decoration-primary-blue"
             >French</span
           >
           <span
-            class="text-[#1a0dab] tracking-wider cursor-pointer hover:underline hover:decoration-[#1a0dab]"
+            class="text-primary-blue tracking-wider cursor-pointer hover:underline hover:decoration-primary-blue"
             >English</span
           >
           <span
-            class="text-[#1a0dab] tracking-wider cursor-pointer hover:underline hover:decoration-[#1a0dab]"
+            class="text-primary-blue tracking-wider cursor-pointer hover:underline hover:decoration-primary-blue"
             >Ikinyarwanda</span
           >
         </p>
       </div>
     </div>
 
-    <footer class="flex flex-col bg-[#f2f2f2] font-arial">
+    <footer class="flex flex-col bg-footer-bg font-arial">
       <div
-        class="border-b border-[#dadce0] text-[0.938rem] text-[#70757a] px-[30px] py-[0.938rem]"
+        class="border-b border-[#dadce0] text-[0.938rem] text-seconday-gray px-[30px] py-[0.938rem]"
       >
         Rwanda
       </div>
       <div
-        class="flex justify-between items-center text-[#70757a] w-full px-[30px] py-[0.938rem] text-sm"
+        class="flex justify-between items-center text-seconday-gray w-full px-[30px] py-[0.938rem] text-sm sm:flex-col sm:justify-center sm:space-y-5"
       >
-        <ul class="flex items-center gap-3">
+        <ul
+          class="flex items-center gap-3 sm:gap-5 text-sm sm:flex-wrap sm:justify-center sm:items-center"
+        >
           <li>About</li>
           <li>Adversting</li>
           <li>Business</li>
