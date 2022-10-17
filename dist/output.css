@@ -691,7 +691,7 @@ video {
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
-.border-\[\#dadce0\] {
+.border-semi-gray {
   --tw-border-opacity: 1;
   border-color: rgb(218 220 224 / var(--tw-border-opacity));
 }
@@ -746,9 +746,9 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.px-\[30px\] {
-  padding-left: 30px;
-  padding-right: 30px;
+.px-\[1\.87rem\] {
+  padding-left: 1.87rem;
+  padding-right: 1.87rem;
 }
 
 .py-\[0\.938rem\] {

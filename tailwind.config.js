@@ -13,6 +13,7 @@ module.exports = {
         "footer-bg": "#f2f2f2",
         "seconday-gray": "#70757a",
         "mobile-primary-blue": "#4285f4",
+        "semi-gray": "#dadce0",
       },
       fontSize: {
         sm: "15px",
