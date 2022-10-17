@@ -12,6 +12,7 @@ module.exports = {
         "primary-blue": "#1a0dab",
         "footer-bg": "#f2f2f2",
         "seconday-gray": "#70757a",
+        "mobile-primary-blue": "#4285f4",
       },
       fontSize: {
         sm: "15px",

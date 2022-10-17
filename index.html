@@ -9,8 +9,34 @@
     <title>Google | clone</title>
   </head>
   <body class="flex flex-col justify-between h-screen">
-    <header class="w-fit flex gap-2 ml-auto p-4 items-center">
-      <div class="flex gap-[0.938rem] text-sm font-arial text-black/70 mr-3">
+    <header
+      class="w-fit flex gap-2 ml-auto p-4 items-center sm:ml-0 sm:justify-between sm:w-full"
+    >
+      <div class="sm:flex hidden space-x-3 items-center font-arial">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-7 h-7 pb-2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+        <p
+          class="text-mobile-primary-blue border-b-2 border-mobile-primary-blue pb-2 text-[0.75rem]"
+        >
+          ALL
+        </p>
+        <p class="pb-2 text-[0.75rem]">IMAGES</p>
+      </div>
+      <div
+        class="flex gap-[0.938rem] text-sm font-arial text-black/70 mr-3 sm:hidden"
+      >
         <p class="hover:underline hover:decoration-black/70 cursor-pointer">
           image
         </p>
@@ -19,7 +45,7 @@
         </p>
       </div>
       <div
-        class="cursor-pointer hover:bg-gray-100 p-2 rounded-full transition-all duration-300 ease-in-out"
+        class="cursor-pointer hover:bg-gray-100 p-2 rounded-full transition-all duration-300 ease-in-out sm:hidden"
       >
         <svg
           class="w-6 h-6 fill-gray-600"
@@ -33,9 +59,23 @@
         </svg>
       </div>
       <div
-        class="p-1 hover:bg-slate-200 rounded-full transition-all duration-200 ease-in-out cursor-pointer"
+        class="p-1 hover:bg-slate-200 rounded-full transition-all duration-200 ease-in-out cursor-pointer sm:flex items-center"
       >
-        <img src="./unnamed.png" class="rounded-full" />
+        <div
+          class="cursor-pointer hover:bg-gray-100 p-2 rounded-full transition-all duration-300 ease-in-out hidden sm:block"
+        >
+          <svg
+            class="w-6 h-6 fill-gray-600"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"
+            ></path>
+          </svg>
+        </div>
+        <img src="./unnamed.png" class="rounded-full sm:h-8 sm:w-8" />
       </div>
     </header>
     <div
@@ -43,9 +83,8 @@
     >
       <img
         alt="Google"
-        height="92"
         src="./googlelogo_color_272x92dp.png"
-        width="272"
+        class="w-[17rem] h-[5.75rem] sm:w-40 sm:h-14"
       />
 
       <div class="flex flex-col justify-center items-center gap-5 sm:w-full">
