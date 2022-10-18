@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>Google | clone</title>
+  </head>
+  <body class="flex flex-col justify-between h-screen">
+    <header
+      class="w-fit flex gap-2 ml-auto p-4 items-center sm:ml-0 sm:justify-between sm:w-full"
+    >
+      <div class="sm:flex hidden space-x-3 items-center font-arial">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-7 h-7 pb-2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+        <p
+          class="text-mobile-primary-blue border-b-2 border-mobile-primary-blue pb-2 text-xsm"
+        >
+          ALL
+        </p>
+        <p class="pb-2 text-xsm">IMAGES</p>
+      </div>
+      <div class="flex gap-4 text-sm font-arial text-black/70 mr-3 sm:hidden">
+        <p class="hover:underline hover:decoration-black/70 cursor-pointer">
+          image
+        </p>
+        <p class="hover:underline hover:decoration-black/70 cursor-pointer">
+          Gmail
+        </p>
+      </div>
+      <div
+        class="cursor-pointer hover:bg-gray-100 p-2 rounded-full transition-all duration-300 ease-in-out sm:hidden"
+      >
+        <svg
+          class="w-6 h-6 fill-gray-600"
+          fill="currentColor"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"
+          ></path>
+        </svg>
+      </div>
+      <div
+        class="p-1 hover:bg-slate-200 rounded-full transition-all duration-200 ease-in-out cursor-pointer sm:flex items-center sm:space-x-3 sm:hover:bg-transparent"
+      >
+        <div
+          class="cursor-pointer hover:bg-gray-100 p-2 rounded-full transition-all duration-300 ease-in-out hidden sm:block"
+        >
+          <svg
+            class="w-6 h-6 fill-gray-600"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"
+            ></path>
+          </svg>
+        </div>
+        <img src="./unnamed.png" class="rounded-full sm:h-8 sm:w-8" />
+      </div>
+    </header>
+    <div
+      class="flex flex-col justify-center items-center font-arial gap-5 -mt-56 px-5"
+    >
+      <img
+        alt="Google"
+        src="./googlelogo_color_272x92dp.png"
+        class="w-base h-48/2 sm:w-40 sm:h-14"
+      />
+
+      <div class="flex flex-col justify-center items-center gap-5 sm:w-full">
+        <div
+          class="flex border w-xbase sm:w-full py-5/2 border-gray-200 rounded-full px-4 justify-center items-center gap-3 hover:bg-white hover:shadow-md"
+        >
+          <svg
+            focusable="false"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="#9aa0a6"
+            class="w-7 h-7"
+          >
+            <path
+              d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+            ></path>
+          </svg>
+
+          <input type="text" placeholder="" class="outline-none w-full" />
+          <svg
+            class="w-7 h-7"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="#4285f4"
+              d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z"
+            ></path>
+            <path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path>
+            <path
+              fill="#fbbc05"
+              d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z"
+            ></path>
+            <path
+              fill="#ea4335"
+              d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z"
+            ></path>
+          </svg>
+          <img src="./google-camera.svg" alt="google camera" class="w-7 ml-2" />
+        </div>
+        <div class="space-x-2">
+          <button
+            class="bg-button-gray px-4 text-primary-gray py-1 rounded border border-white hover:border-gray-200 hover:shadow-sm"
+          >
+            Google Search
+          </button>
+          <button
+            class="bg-button-gray px-4 text-primary-gray py-1 rounded border border-white hover:border-gray-200 hover:shadow-sm"
+          >
+            I'm feeling lucky
+          </button>
+        </div>
+        <p class="text-sm space-x-2 text-primary-gray">
+          Google offered in :
+          <span
+            class="text-primary-blue tracking-wider cursor-pointer hover:underline hover:decoration-primary-blue"
+            >French</span
+          >
+          <span
+            class="text-primary-blue tracking-wider cursor-pointer hover:underline hover:decoration-primary-blue"
+            >English</span
+          >
+          <span
+            class="text-primary-blue tracking-wider cursor-pointer hover:underline hover:decoration-primary-blue"
+            >Ikinyarwanda</span
+          >
+        </p>
+      </div>
+    </div>
+
+    <footer class="flex flex-col bg-footer-bg font-arial">
+      <div
+        class="border-b border-semi-gray text-sm text-seconday-gray px-7 py-4"
+      >
+        Rwanda
+      </div>
+      <div
+        class="flex justify-between items-center text-seconday-gray w-full px-7 py-4 text-sm sm:flex-col sm:justify-center sm:space-y-5"
+      >
+        <ul
+          class="flex items-center gap-3 sm:gap-5 text-sm sm:flex-wrap sm:justify-center sm:items-center"
+        >
+          <li class="hover:underline transition-all cursor-pointer">About</li>
+          <li class="hover:underline transition-all cursor-pointer">
+            Adversting
+          </li>
+          <li class="hover:underline transition-all cursor-pointer">
+            Business
+          </li>
+          <li class="hover:underline transition-all cursor-pointer">
+            How Search works
+          </li>
+        </ul>
+        <ul class="flex items-center gap-3">
+          <li class="hover:underline transition-all cursor-pointer">Privacy</li>
+          <li class="hover:underline transition-all cursor-pointer">Terms</li>
+          <li class="hover:underline transition-all cursor-pointer">
+            Settings
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
