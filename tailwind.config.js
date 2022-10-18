@@ -4,7 +4,17 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        arial: "arial",
+        arial: ["arial", "sans serif"],
+      },
+      padding: {
+        "5/2": "0.6rem",
+      },
+      width: {
+        base: "17rem",
+        xbase: "36rem",
+      },
+      height: {
+        "48/2": "5.75rem",
       },
       colors: {
         "button-gray": "#f8f9fa",
@@ -17,6 +27,7 @@ module.exports = {
       },
       fontSize: {
         sm: "15px",
+        xsm: "12px",
       },
       screens: {
         sm: { max: "649px" },
